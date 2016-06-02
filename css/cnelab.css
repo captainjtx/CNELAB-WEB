@@ -1,0 +1,244 @@
+header{background-color: white}
+body
+{
+	color: #FFFFFF;
+	background-color: white;
+	font-family: 'Open Sans', serif;
+	font-weight: 300;
+}
+.container .jumbotron
+{
+	padding: 0;
+	background-color: transparent;
+}
+#main-content
+{
+	background-color: white;
+}
+#main-content.container-fluid
+{
+	border-bottom: 1px solid gray;
+}
+
+#banner
+{
+	color: #003300;
+	font-family: 'Open Sans', serif;
+	font-weight: 300;
+	font-size: 2.1em;
+	padding-top: 50px;
+	text-align: center;
+}
+#header-nav
+{
+	background-color: #44B78B;
+	border-radius: 0;
+	border: 0;
+}
+#brand-meta
+{
+	color: #0C4B33;
+	font-size: 0.85em;
+	font-weight: 400;
+	margin-top: 10px;
+}
+.brand-origin
+{
+	color: #a41326;
+	font-weight: bold;
+}
+#nav-list
+{
+	margin-right:10px;
+	margin-top:15px;
+	font-weight: 600;
+}
+
+#nav-list a
+{
+	text-transform: uppercase;
+	color: #0C4B33;
+	text-align: center;
+}
+
+#button-start
+{
+	font-size:1.4em; width: 250px;
+	background-color:#44B78B;
+	border: none;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+#button-start:hover
+{
+	background-color: #7dcfaf;
+}
+#nav-list a:hover
+{
+	color: #a41326;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar
+{
+	border: 1px solid #0C4B33;
+}
+.navbar-header button.navbar-toggle
+{
+	clear: both;
+}
+
+/*super large screen*/
+@media (min-width: 1450px)
+{ .container
+	{width: 1420px;}
+	#logo-img
+	{
+		background: url('../icon/cnelab_large.png') no-repeat;
+		background-size: 100px 81px;
+		width: 100px;
+		height: 81px;
+		margin: 15px 15px 10px 0;
+	}
+	.container #banner-img{
+		background: url('../images/jumbotron.png') no-repeat;
+		background-size: 850px 628px;
+		height: 628px;
+		background-position: 270px 15px;
+	}
+	#brand-meta
+	{
+		font-size: 0.9em;
+	}
+	#nav-list 
+	{
+		font-size: 1.1em;
+	}
+	#nav-list a span
+	{
+		font-size: 1.9em;
+	}
+	#brand-owner
+	{
+		font-size: 0.8em;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1449px)
+{
+	#logo-img
+	{
+		background: url('../icon/cnelab_large.png') no-repeat;
+		background-size: 100px 81px;
+		width: 100px;
+		height: 81px;
+		margin: 15px 15px 10px 0;
+	}
+	.container #banner-img{
+		background: url('../images/jumbotron.png') no-repeat;
+		background-size: 850px 628px;
+		height: 628px;
+		background-position: 145px 15px;
+	}
+	#brand-meta
+	{
+		font-size: 0.8em;
+	}
+	#nav-list 
+	{
+		font-size: 1em;
+	}
+	#nav-list a span
+	{
+		font-size: 1.8em;
+	}
+	#brand-owner
+	{
+		font-size: 0.7em;
+	}
+
+}
+
+/*median device*/
+@media (min-width: 992px) and (max-width: 1199px)
+{
+	#logo-img{
+		background: url('../icon/cnelab.png') no-repeat;
+		background-size: 80px 65px;
+		width: 80px;
+		height: 65px;
+		margin: 15px 15px 10px 0;
+	}
+	.container #banner-img{
+		background: url('../images/jumbotron.png') no-repeat;
+		background-size: 850px 628px;
+		height: 628px;
+		background-position: 45px 15px;
+	}
+	#brand-meta
+	{
+		font-size: 0.7em;
+	}
+	#nav-list 
+	{
+		font-size: 0.9em;
+	}
+	#nav-list a span
+	{
+		font-size: 1.7em;
+	}
+	#brand-owner
+	{
+		margin-top: -10px;
+		font-size: 0.6em;
+	}
+}
+/*small device*/
+@media (min-width: 768px) and (max-width: 991px)
+{
+
+	#logo-img{
+		background: url('../icon/cnelab.png') no-repeat;
+		background-size: 80px 65px;
+		width: 80px;
+		height: 65px;
+		margin: 15px 15px 10px 0;
+	}
+	#nav-list 
+	{
+		font-size: 0.9em;
+	}
+	#nav-list a span
+	{
+		font-size: 1.7em;
+	}
+}
+/*extra small device*/
+@media (max-width: 767px)
+{
+	#logo-img{
+		background: url('../icon/cnelab.png') no-repeat;
+		background-size: 80px 65px;
+		width: 80px;
+		height: 65px;
+		margin: 15px 15px 0 10px;
+	}
+	#collapsable-nav a
+	{
+		font-size: 1.2em;
+		text-align: left;
+	}
+	#collapsable-nav a span
+	{
+		font-size: 1em;
+		margin-right: 10px;
+	}
+	#brand-meta
+	{
+		font-size: 0.7em;
+	}
+	#brand-owner
+	{
+		font-size: 0.6em;
+		margin-top: -10px;
+	}
+}
+
+

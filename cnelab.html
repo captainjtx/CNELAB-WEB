@@ -6,9 +6,87 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>CNELab</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/cnelab.css">
+		<link rel="icon" href="icon/title.png">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
 	</head>
 <body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="cnelab.html" class="pull-left visible-xs visible-sm visible-md visible-lg">
+						<div id="logo-img" alt="Logo image">
+						</div>
+					</a>
+					<div class="navbar-brand hidden-sm">
+						<p id="brand-meta">A Matlab software for<br> 
+						<span class="brand-origin">C</span>lincial
+					       	<span class="brand-origin">N</span>eural 
+						<span class="brand-origin">E</span>ngineering 
+						<span class="brand-origin">Lab</span>oratory.
+						</p>
+						<p id="brand-owner">
+						&copy; Tianxiao Jiang<br> 
+						</p>
+					</div>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+						<li>
+							<a href="cnelab.html">
+								<span class="glyphicon glyphicon-flash"></span>
+								<br class="hidden-xs"> Quick-start</a>
+							</a>
+						</li>
+						<li>
+							<a href="cnelab.html">
+								<span class="glyphicon glyphicon-download"></span>
+								<br class="hidden-xs"> Download</a>
+							</a>
+						</li>
+						<li>
+							<a href="cnelab.html">
+								<span class="glyphicon glyphicon-book"></span>
+								<br class="hidden-xs"> Documentation</a>
+							</a>
+						</li>
+						<li>
+							<a href="cnelab.html">
+								<span class="glyphicon glyphicon-file"></span>
+								<br class="hidden-xs"> Publication</a>
+							</a>
+						</li>
+						<li>
+							<a href="cnelab.html">
+								<span class="glyphicon glyphicon-info-sign"></span>
+								<br class="hidden-xs"> About</a>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div id="main-content" class="container-fluid">
+		<div class="container">
+			<div class="jumbotron">
+				<div id="banner">
+					CNELab can visualize data in a highly customized way,<br> and help you better understand it. 
+				</div>
+				<br>
+				<a id="button-start" class="btn btn-primary center-block" href="#" role="button">Get started now</a>
+				<div class="hidden-xs hidden-sm" id="banner-img">
+				</div>
+			</div>
+		</div>
+	</div>
 	<script src="js/jquery-2.2.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
