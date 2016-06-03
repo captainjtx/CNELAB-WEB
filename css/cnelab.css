@@ -1,4 +1,7 @@
-header{background-color: white}
+header{
+	background-color: white;
+	padding:0;
+}
 body
 {
 	color: #FFFFFF;
@@ -19,7 +22,14 @@ body
 {
 	border-bottom: 1px solid gray;
 }
-
+#subpage 
+{
+	color: white;
+	background-color: #6CCA6E;
+	font-size: 2em;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
 #banner
 {
 	color: #003300;
@@ -34,6 +44,7 @@ body
 	background-color: #44B78B;
 	border-radius: 0;
 	border: 0;
+	margin-bottom: 0;
 }
 #brand-meta
 {
