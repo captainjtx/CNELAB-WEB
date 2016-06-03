@@ -4,35 +4,72 @@ header{
 }
 body
 {
-	color: #FFFFFF;
+	color: #003300;
 	background-color: white;
 	font-family: 'Open Sans', serif;
 	font-weight: 300;
+}
+.row{
+    overflow: hidden; 
+}
+
+[class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
 }
 .container .jumbotron
 {
 	padding: 0;
 	background-color: transparent;
 }
+#side-bar
+{
+  background: #f8f8f8; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #f8f8f8, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #f8f8f8, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #f8f8f8, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #f8f8f8, white); /* Standard syntax */
+}
+
+#download-content h1
+{
+	padding-top: 10px;
+	font-size: 2em;
+}
+#download-content h2
+{
+	font-size: 1.5em;
+}
+#side-bar h1
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 1.3em;
+	border-bottom: 1px solid #44B78B; 
+}
+#side-bar h2
+{
+	padding-top: 5px;
+	font-size: 1em;
+}
 #main-content
 {
 	background-color: white;
 }
-#main-content.container-fluid
+#main-content
 {
 	border-bottom: 1px solid gray;
 }
 #subpage 
 {
 	color: white;
-	background-color: #6CCA6E;
+	background-color: #84C785;
 	font-size: 2em;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
 #banner
 {
-	color: #003300;
 	font-family: 'Open Sans', serif;
 	font-weight: 300;
 	font-size: 2.1em;
@@ -164,7 +201,10 @@ body
 	{
 		font-size: 0.7em;
 	}
-
+	#side-bar>*
+	{
+		padding-left: 20px;
+	}
 }
 
 /*median device*/
@@ -199,6 +239,10 @@ body
 	{
 		margin-top: -10px;
 		font-size: 0.6em;
+	}
+	#side-bar>*
+	{
+		padding-left: 20px;
 	}
 }
 /*small device*/
