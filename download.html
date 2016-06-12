@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/cnelab.css">
 		<link rel="icon" href="icon/title.png">
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400">
 	</head>
 <body>
 	<header>
@@ -25,9 +26,6 @@
 					       	<span class="brand-origin">N</span>eural 
 						<span class="brand-origin">E</span>ngineering 
 						<span class="brand-origin">Lab</span>oratory.
-						</p>
-						<p id="brand-owner">
-						&copy; Tianxiao Jiang<br> 
 						</p>
 					</div>
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
@@ -85,8 +83,21 @@
 				<h1>
 					How to get CNELab
 				</h1>
+				<p>CNELab is a free open source <a href="https://www.mathworks.com" target="_blank">Matlab</a> software under <a href=https://github.com/captainjtx/CNELAB/blob/master/COPYING target="_blank">GNU license (GPLv3)</a>. We recommend using the latest Matlab release version, currently R2016a. However, most features of CNELab should be backward compatible with R2014a but not guaranteed on any version before. Starting R2014b, <a href="http://www.mathworks.com/help/matlab/graphics_transition/major-graphics-changes-in-r2014b.html" target="_blank">Matlab updated on its graphic system</a>. CNELab experienced a major performance drop (escpecially in plotting speed) in R2014b and R2015a. Thus, it is not recommended to use R2014b, R2015a and any version before R2014a.</p>
 				<h2> Option 1: Get the latest release version </h2> 
+				<p>
+					The latest release version is
+					<a href="download/CNELAB_2_0.zip" download>
+						CNELab 2.0.
+					</a>
+				</p>
 				<h2> Option 2: Get the development version</h2>
+				<p> If you are an experienced user, try our latest development version on
+				<a href="https://github.com/captainjtx/CNELAB" target="_blank">GitHub</a>. It is consistently updated and we need your help on making it bug free. <a href="https://git-scm.com/" target="_blank">Git</a> is the most popular free and open source version control system. You can find a lot of tutorials on <a href=""> <a href="https://git-scm.com/docs/gittutorial" target="_blank">how to use Git</a>.</p>
+			      	<p>If you had good Matlab programming skill, <a href="https://git-scm.com/docs/git-clone" target="_blank">clone </a> the repository and create your own <a href="https://git-scm.com/docs/git-branch" target="_blank">branch</a>. In this way, you can easily keep your customization while updating with our future changes.</p>
+			       	<p> To clone the repository using shell command: </p>
+			       	<div class="code">git clone https://github.com/captainjtx/CNELAB</div>
+				<p>Or use GUI such as <a href="https://desktop.github.com" target="_blank">Github Desktop</a>. You can also download the <a href="https://github.com/captainjtx/CNELAB/archive/master.zip">zip archive</a> on the <a href="https://github.com/captainjtx/CNELAB" target="_blank">repository's home page</a>. It reflects the latest update we made. 
 			</div>
 			<div class="col-md-4 col-lg-4" id="side-bar">
 				<h1>Support CNELab !</h1>
@@ -97,6 +108,12 @@
 			</div>
 		</div>
 	</div>
+	<footer>
+		<div class="container">
+			<a href="cnelab.html" class="footer-btn"> Report Bugs</a>
+			<div id="copyright">Copyright &copy; 2016 Tianxiao Jiang</div>
+		</div>
+	</footer>
 	<script src="js/jquery-2.2.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
