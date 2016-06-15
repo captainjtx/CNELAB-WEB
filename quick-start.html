@@ -98,14 +98,18 @@
 		<div class="code">&gt;&gt; setup</div>
 		<p>If no error message prompted out, Congratulations !</p>
 
-		<h2>Attention</h2>
+		<h2>More on setup.m</h2>
 		<p>
 		<ul>
 			<li>Although <span class="code">setup</span> automatically removes exsited CNELab from Matlab Path, it is always a good practice to manually delete the CNELab folder. 
-			<li>
-			<li>
+			<li><span class="code">setup</span> will check if your java JVM version used in Matlab lands in <span class="code">1 . 7 . &#42;</span> . Most of time you should not worry about it as Matlab shipped its version with specific JVM after R2013b. Type <span class="code">version -java</span> to verify yourself.   
+			<li><span class="code">setup</span> tries to recompile c++ mexfunctions in CNELab to your system environment. However, our release already contained compiled mexfunctions that can be immediately used in 64-bit of MacOS/Windows computer. Only if it is a unix or 32-bit system should you be careful. If you received a mex compile error, you would have to check your c++ compiler on maltab and manually compile them. Type <span class="code">mex -setup c++</span> to verify yourself.    
 		</ul>
 		</p>
+		<h2>Start with demo</h2>
+		<p>The best way to learn CNELab is to use it:</p>
+		<div class="code">&gt;&gt; cnelab</div>
+		<p>Open <span class="code">$CNELAB_ROOT/demo/demo.cds</span> to explore yourself.</p>
 	</div>
 	<footer>
 		<div class="container">
