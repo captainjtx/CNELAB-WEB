@@ -74,39 +74,38 @@
 	</header>
 	<div id="subpage">
 		<div class="container">
-			Download
+			It is easy to use CNELab !		
 		</div>
 	</div>
-	<div class="container" id="download-container">
-		<div class="row">	
-			<div class="col-md-8 col-lg-8 doc-content" id="download-content">
-				<h1>
-					How to get CNELab
-				</h1>
-				<p>CNELab is a free open source <a href="https://www.mathworks.com" target="_blank">Matlab</a> software under <a href=https://github.com/captainjtx/CNELAB/blob/master/COPYING target="_blank">GNU license (GPLv3)</a>. Make sure you have the <a href="quick-start.html">suggested Matlab version</a> installed.</p>
-				<h2> Option 1: Get the latest release version </h2> 
-				<p>
-					The latest release version is
-					<a href="download/CNELAB_2_0.zip" download>
-						CNELab 2.0.
-					</a>
-				</p>
-				<h2> Option 2: Get the development version</h2>
-				<p> If you are an experienced user, try our latest development version on
-				<a href="https://github.com/captainjtx/CNELAB" target="_blank">GitHub</a>. It is consistently updated and we need your help on making it bug free. <a href="https://git-scm.com/" target="_blank">Git</a> is the most popular free and open source version control system. You can find a lot of tutorials on <a href=""> <a href="https://git-scm.com/docs/gittutorial" target="_blank">how to use Git</a>.</p>
-			      	<p>If you had good Matlab programming skill, <a href="https://git-scm.com/docs/git-clone" target="_blank">clone </a> the repository and create your own <a href="https://git-scm.com/docs/git-branch" target="_blank">branch</a>. In this way, you can easily keep your customization while updating with our future changes.</p>
-			       	<p> To clone the repository using shell command: </p>
-			       	<div class="code">git clone https://github.com/captainjtx/CNELAB</div>
-				<p>Or use GUI such as <a href="https://desktop.github.com" target="_blank">Github Desktop</a>. You can also download the <a href="https://github.com/captainjtx/CNELAB/archive/master.zip">zip archive</a> on the <a href="https://github.com/captainjtx/CNELAB" target="_blank">repository's home page</a>. It reflects the latest update we made. 
-			</div>
-			<div class="col-md-4 col-lg-4" id="side-bar">
-				<h1>Support CNELab !</h1>
-				<h2> Cite us if you use it in your research </h2> 
-				<h2> Web-hosting is expensive, donate us !</h2>
-				<h2> Contribute by coding </h2> 
-				<h2> Consider to join us !</h2>
-			</div>
-		</div>
+
+	<div class="container doc-content" id="quick-start-content">
+		<h1>Getting started with CNELab</h1>
+		<p>Getting started with CNELab is fairly easy. It only took a few minutes to complete this tutorial step by step.</p>
+		<h2>Preparations</h2>
+		<p>We recommend using the latest Matlab release version, currently R2016a. However, most features of CNELab should be backward compatible with until R2014a. Starting R2014b, <a href="http://www.mathworks.com/help/matlab/graphics_transition/major-graphics-changes-in-r2014b.html" target="_blank">Matlab updated on its graphic system</a>. CNELab experienced a major performance drop (escpecially in plotting speed) in R2014b and R2015a. Thus, it is not recommended to use R2014b, R2015a or any version before R2014a.</p>
+		<p>CNELab depends on several basic toolboxes of Matlab. Most of time they already came with your license. 
+		<ul>
+			<li><a href="http://www.mathworks.com/products/signal/" target="_blank">Signal Processing Toolbox.</a>
+			<li><a href="http://www.mathworks.com/products/statistics/" target="_blank">Statistics and Machine Learning Toolbox.</a>
+			<li><a href="http://www.mathworks.com/products/wavelet/" target="_blank">Wavelet Toolbox.</a>
+		</ul>
+		</p>
+		<p>You can type <span class="code">ver</span> in Matlab command window to verify.</p>
+		<h2>Install CNELab</h2>
+		<p>If do not have CNELab yet, please refer to our <a href="download.html">download</a> page. If you downloaded the zip file, unzip it and put it anywhere you prefer.</p>
+		<p>Change your <a href="http://www.mathworks.com/help/matlab/ref/pwd.html" target="_blank">current Matlab path</a> to the root folder of CNELab, where you can see files such as <span class="code">cnelab.m</span> and <span class="code">setup.m</span>.</p>
+		<p>Run <span class="code">setup.m</span> by typing it in command window (ignore the prompt sign <span class="code">&gt;&gt;</span>):</p>
+		<div class="code">&gt;&gt; setup</div>
+		<p>If no error message prompted out, Congratulations !</p>
+
+		<h2>Attention</h2>
+		<p>
+		<ul>
+			<li>Although <span class="code">setup</span> automatically removes exsited CNELab from Matlab Path, it is always a good practice to manually delete the CNELab folder. 
+			<li>
+			<li>
+		</ul>
+		</p>
 	</div>
 	<footer>
 		<div class="container">
