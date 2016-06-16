@@ -11,115 +11,134 @@
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400">
 	</head>
-<body>
-	<header>
-		<nav id="header-nav" class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header">
-					<a href="cnelab.html" class="pull-left visible-xs visible-sm visible-md visible-lg">
-						<div id="logo-img" alt="Logo image">
+	<body data-spy="scroll" data-target=".bs-docs-sidebar" data-offset="20">
+		<header>
+			<nav id="header-nav" class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="cnelab.html" class="pull-left visible-xs visible-sm visible-md visible-lg">
+							<div id="logo-img" alt="Logo image">
+							</div>
+						</a>
+						<div class="navbar-brand hidden-sm">
+							<p id="brand-meta">A Matlab software for<br> 
+							<span class="brand-origin">C</span>lincial
+							<span class="brand-origin">N</span>eural 
+							<span class="brand-origin">E</span>ngineering 
+							<span class="brand-origin">Lab</span>oratory.
+							</p>
 						</div>
-					</a>
-					<div class="navbar-brand hidden-sm">
-						<p id="brand-meta">A Matlab software for<br> 
-						<span class="brand-origin">C</span>lincial
-					       	<span class="brand-origin">N</span>eural 
-						<span class="brand-origin">E</span>ngineering 
-						<span class="brand-origin">Lab</span>oratory.
-						</p>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
 					</div>
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+					<div id="collapsable-nav" class="collapse navbar-collapse">
+						<ul id="nav-list" class="nav navbar-nav navbar-right">
+							<li>
+								<a href="quick-start.html">
+									<span class="glyphicon glyphicon-flash"></span>
+									<br class="hidden-xs"> Quick-start</a>
+								</a>
+							</li>
+							<li>
+								<a href="download.html">
+									<span class="glyphicon glyphicon-download"></span>
+									<br class="hidden-xs"> Download</a>
+								</a>
+							</li>
+							<li>
+								<a href="cnelab.html">
+									<span class="glyphicon glyphicon-book"></span>
+									<br class="hidden-xs"> Documentation</a>
+								</a>
+							</li>
+							<li>
+								<a href="cnelab.html">
+									<span class="glyphicon glyphicon-file"></span>
+									<br class="hidden-xs"> Publication</a>
+								</a>
+							</li>
+							<li>
+								<a href="cnelab.html">
+									<span class="glyphicon glyphicon-info-sign"></span>
+									<br class="hidden-xs"> About</a>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div id="collapsable-nav" class="collapse navbar-collapse">
-					<ul id="nav-list" class="nav navbar-nav navbar-right">
-						<li>
-							<a href="quick-start.html">
-								<span class="glyphicon glyphicon-flash"></span>
-								<br class="hidden-xs"> Quick-start</a>
-							</a>
-						</li>
-						<li>
-							<a href="download.html">
-								<span class="glyphicon glyphicon-download"></span>
-								<br class="hidden-xs"> Download</a>
-							</a>
-						</li>
-						<li>
-							<a href="cnelab.html">
-								<span class="glyphicon glyphicon-book"></span>
-								<br class="hidden-xs"> Documentation</a>
-							</a>
-						</li>
-						<li>
-							<a href="cnelab.html">
-								<span class="glyphicon glyphicon-file"></span>
-								<br class="hidden-xs"> Publication</a>
-							</a>
-						</li>
-						<li>
-							<a href="cnelab.html">
-								<span class="glyphicon glyphicon-info-sign"></span>
-								<br class="hidden-xs"> About</a>
-							</a>
-						</li>
-					</ul>
-				</div>
+			</nav>
+		</header>
+
+		<div id="subpage">
+			<div class="container">
+				It is easy to use CNELab !		
 			</div>
-		</nav>
-	</header>
-	<div id="subpage">
-		<div class="container">
-			It is easy to use CNELab !		
 		</div>
-	</div>
-
-	<div class="container doc-content" id="quick-start-content">
-		<h1>Getting started with CNELab</h1>
-		<p>Getting started with CNELab is fairly easy. It only took a few minutes to complete this tutorial step by step.</p>
-		<h2>Preparations</h2>
-		<p>We recommend using the latest Matlab release version, currently R2016a. However, most features of CNELab should be backward compatible with until R2014a. Starting R2014b, <a href="http://www.mathworks.com/help/matlab/graphics_transition/major-graphics-changes-in-r2014b.html" target="_blank">Matlab updated on its graphic system</a>. CNELab experienced a major performance drop (escpecially in plotting speed) in R2014b and R2015a. Thus, it is not recommended to use R2014b, R2015a or any version before R2014a.</p>
-		<p>CNELab depends on several basic toolboxes of Matlab. Most of time they already came with your license. 
-		<ul>
-			<li><a href="http://www.mathworks.com/products/signal/" target="_blank">Signal Processing Toolbox.</a>
-			<li><a href="http://www.mathworks.com/products/statistics/" target="_blank">Statistics and Machine Learning Toolbox.</a>
-			<li><a href="http://www.mathworks.com/products/wavelet/" target="_blank">Wavelet Toolbox.</a>
-		</ul>
-		</p>
-		<p>You can type <span class="code">ver</span> in Matlab command window to verify.</p>
-		<h2>Install CNELab</h2>
-		<p>If do not have CNELab yet, please refer to our <a href="download.html">download</a> page. If you downloaded the zip file, unzip it and put it anywhere you prefer.</p>
-		<p>Change your <a href="http://www.mathworks.com/help/matlab/ref/pwd.html" target="_blank">current Matlab path</a> to the root folder of CNELab, where you can see files such as <span class="code">cnelab.m</span> and <span class="code">setup.m</span>.</p>
-		<p>Run <span class="code">setup.m</span> by typing it in command window (ignore the prompt sign <span class="code">&gt;&gt;</span>):</p>
-		<div class="code">&gt;&gt; setup</div>
-		<p>If no error message prompted out, Congratulations !</p>
-
-		<h2>More on setup.m</h2>
-		<p>
-		<ul>
-			<li>Although <span class="code">setup</span> automatically removes exsited CNELab from Matlab Path, it is always a good practice to manually delete the CNELab folder. 
-			<li><span class="code">setup</span> will check if your java JVM version used in Matlab lands in <span class="code">1 . 7 . &#42;</span> . Most of time you should not worry about it as Matlab shipped its version with specific JVM after R2013b. Type <span class="code">version -java</span> to verify yourself.   
-			<li><span class="code">setup</span> tries to recompile c++ mexfunctions in CNELab to your system environment. However, our release already contained compiled mexfunctions that can be immediately used in 64-bit of MacOS/Windows computer. Only if it is a unix or 32-bit system should you be careful. If you received a mex compile error, you would have to check your c++ compiler on maltab and manually compile them. Type <span class="code">mex -setup c++</span> to verify yourself.    
-		</ul>
-		</p>
-		<h2>Start with demo</h2>
-		<p>The best way to learn CNELab is to use it:</p>
-		<div class="code">&gt;&gt; cnelab</div>
-		<p>Open <span class="code">$CNELAB_ROOT/demo/demo.cds</span> to explore yourself.</p>
-	</div>
-	<footer>
-		<div class="container">
-			<a href="cnelab.html" class="footer-btn"> Report Bugs</a>
-			<div id="copyright">Copyright &copy; 2016 Tianxiao Jiang</div>
+		<div class="container doc-content" id="quick-start-content" >
+			<div class="row">
+				<div class="col-xs-9">
+					<h1>Getting started with CNELab</h1>
+					<p>Getting started with CNELab is fairly easy. It only took a few minutes to complete this tutorial step by step.</p>
+					<section id="preparation">
+						<h2>Preparations</h2>
+						<p>We recommend using the latest Matlab release version, currently R2016a. However, most features of CNELab should be backward compatible with until R2014a. Starting R2014b, <a href="http://www.mathworks.com/help/matlab/graphics_transition/major-graphics-changes-in-r2014b.html" target="_blank">Matlab updated on its graphic system</a>. CNELab experienced a major performance drop (escpecially in plotting speed) in R2014b and R2015a. Thus, it is not recommended to use R2014b, R2015a or any version before R2014a.</p>
+						<p>CNELab depends on several basic toolboxes of Matlab. Most of time they already came with your license. 
+						<ul>
+							<li><a href="http://www.mathworks.com/products/signal/" target="_blank">Signal Processing Toolbox.</a>
+								<li><a href="http://www.mathworks.com/products/statistics/" target="_blank">Statistics and Machine Learning Toolbox.</a>
+									<li><a href="http://www.mathworks.com/products/wavelet/" target="_blank">Wavelet Toolbox.</a>
+						</ul>
+						</p>
+						<p>You can type <span class="code">ver</span> in Matlab command window to verify.</p>
+					</section>
+					<section id="installation">
+						<h2>Install CNELab</h2>
+						<p>If do not have CNELab yet, please refer to our <a href="download.html">download</a> page. If you downloaded the zip file, unzip it and put it anywhere you prefer.</p>
+						<p>Change your <a href="http://www.mathworks.com/help/matlab/ref/pwd.html" target="_blank">current Matlab path</a> to the root folder of CNELab, where you can see files such as <span class="code">cnelab.m</span> and <span class="code">setup.m</span>.</p>
+						<p>Run <span class="code">setup.m</span> by typing it in command window (ignore the prompt sign <span class="code">&gt;&gt;</span>):</p>
+						<div class="code">&gt;&gt; setup</div>
+						<p>If no error message prompted out, Congratulations !</p>
+					</section>
+					<section id="setup">
+						<h2>More on setup.m</h2>
+						<p>
+						<ul>
+							<li>Although <span class="code">setup</span> automatically removes exsited CNELab from Matlab Path, it is always a good practice to manually delete the CNELab folder. 
+								<li><span class="code">setup</span> will check if your java JVM version used in Matlab lands in <span class="code">1 . 7 . &#42;</span> . Most of time you should not worry about it as Matlab shipped its version with specific JVM after R2013b. Type <span class="code">version -java</span> to verify yourself.   
+									<li><span class="code">setup</span> tries to recompile c++ mexfunctions in CNELab to your system environment. However, our release already contained compiled mexfunctions that can be immediately used in 64-bit of MacOS/Windows computer. Only if it is a unix or 32-bit system should you be careful. If you received a mex compile error, you would have to check your c++ compiler on maltab and manually compile them. Type <span class="code">mex -setup c++</span> to verify yourself.    
+						</ul>
+						</p>
+					</section>
+					<section id="start">
+						<h2>Start with demo</h2>
+						<p>The best way to learn CNELab is to use it:</p>
+						<div class="code">&gt;&gt; cnelab</div>
+						<p>Open <span class="code">$CNELAB_ROOT/demo/demo.cds</span> to explore yourself.</p>
+					</section>
+				</div>
+				<nav class="col-xs-3 bs-docs-sidebar">
+					<ul class="nav nav-stacked" data-spy="affix" data-offset-top="200" id="nav-sidebar">
+						<li class="active"><a href="#preparation">Preparation</a></li>
+						<li><a href="#installation">Install CNELab</a></li>
+						<li><a href="#setup">More on setup.m</a></li>
+						<li><a href="#start">Start with demo</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
-	</footer>
-	<script src="js/jquery-2.2.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
-</body>
+		<footer>
+			<div class="container">
+				<a href="cnelab.html" class="footer-btn"> Report Bugs</a>
+				<div id="copyright">Copyright &copy; 2016 Tianxiao Jiang</div>
+			</div>
+		</footer>
+		<script src="js/jquery-2.2.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/cnelab.js"></script>
+	</body>
 </html>
 
