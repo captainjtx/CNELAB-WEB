@@ -57,6 +57,31 @@ body
 .bs-docs-sidebar .nav>.active>ul.nav {
     display: block;           
 }
+.copy-btn img
+{
+	width: 18px;
+	height: 18px;
+}
+.copy-btn
+{
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 1px solid #E5E5E5;
+	background-color: #F1F1F1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.copy-btn:focus
+{
+	outline: none;
+}
+.copy-btn:hover
+{
+	background-color: #E0E0E0;
+}
+
+
 .affix{
     top: 20px;
 }
@@ -120,6 +145,7 @@ body
 	font-size: 1.3em;
 	color: #2a7b2a;
 	border-radius: 10px;
+	position: relative;
 }
 span.code
 {

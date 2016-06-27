@@ -19,6 +19,7 @@
 			ga('create', 'UA-79862688-1', 'auto');
 			ga('send', 'pageview');
 		</script>
+		<script src="node_modules/clipboard/dist/clipboard.min.js"></script>
 	</head>
 	<body data-spy="scroll" data-target=".bs-docs-sidebar" data-offset="20">
 		<header>
@@ -109,7 +110,12 @@
 						<p>If do not have CNELab yet, please refer to our <a href="download.html">download</a> page. If you downloaded the zip file, unzip it and put it anywhere you prefer.</p>
 						<p>Change your <a href="http://www.mathworks.com/help/matlab/ref/pwd.html" target="_blank">current Matlab path</a> to the root folder of CNELab, where you can see files such as <span class="code">cnelab.m</span> and <span class="code">setup.m</span>.</p>
 						<p>Run <span class="code">setup.m</span> by typing it in command window (ignore the prompt sign <span class="code">&gt;&gt;</span>):</p>
-						<div class="code">&gt;&gt; setup</div>
+						<div class="code">
+							<span>&gt;&gt; setup</span>
+							<button class="copy-btn" data-clipboard-text="setup" data-toggle="tooltip" data-placement="top" title="Copy to clipboard" >
+								<img src="icon/clippy.svg" alt="Copy to clipboard">
+							</button>
+						</div>
 						<p>If no error message prompted out, Congratulations !</p>
 					</section>
 					<section id="setup">
@@ -125,7 +131,12 @@
 					<section id="start">
 						<h2>Start with demo</h2>
 						<p>The best way to learn CNELab is to use it:</p>
-						<div class="code">&gt;&gt; cnelab</div>
+						<div class="code">
+							<span>&gt;&gt; cnelab</span> 
+							<button class="copy-btn" data-clipboard-text="cnelab" data-toggle="tooltip" data-placement="top" title="Copy to clipboard" >
+								<img src="icon/clippy.svg" alt="Copy to clipboard">
+							</button>
+						</div>
 						<p>Open <span class="code">$CNELAB_ROOT/demo/demo.cds</span> to explore yourself.</p>
 					</section>
 				</div>
@@ -145,6 +156,7 @@
 				<div id="copyright">Copyright &copy; 2016 Tianxiao Jiang</div>
 			</div>
 		</footer>
+
 		<script src="bootstrap/js/jquery-2.2.3.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		<script src="js/cnelab.js"></script>
