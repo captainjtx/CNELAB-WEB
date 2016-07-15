@@ -45,3 +45,4 @@ $('[data-toggle="tooltip"]').hover(
 			$('[data-toggle="tooltip"]').attr('data-original-title', 'Copy to clipboard');
 		}
 );
+var msg="Hello world";
