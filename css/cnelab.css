@@ -175,7 +175,15 @@ span.code
 {
 	border-bottom: 1px solid gray;
 }
-#subpage,#info-page
+#subpage
+{
+	color: white;
+	background-color: #84C785;
+	font-size: 2em;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#info-page
 {
 	color: white;
 	background-color: #84C785;
