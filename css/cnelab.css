@@ -171,10 +171,6 @@ span.code
 {
 	background-color: white;
 }
-#main-content
-{
-	border-bottom: 1px solid gray;
-}
 #subpage
 {
 	color: white;
@@ -188,8 +184,9 @@ span.code
 	color: white;
 	background-color: #84C785;
 	font-size: 2em;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top:60px;
 }
 #info-page h1
 {
