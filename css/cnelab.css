@@ -175,13 +175,23 @@ span.code
 {
 	border-bottom: 1px solid gray;
 }
-#subpage 
+#subpage,#info-page
 {
 	color: white;
 	background-color: #84C785;
 	font-size: 2em;
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+#info-page h1
+{
+	text-align: left;	
+	font-size: 0.7em;
+}
+#info-page p 
+{
+	text-align: left;	
+	font-size: 0.5em;
 }
 #banner
 {
@@ -237,9 +247,20 @@ span.code
 	color: #a41326;
 }
 
-.doc-content a 
+.doc-content a,#side-bar a 
 {
 	color: #2a7b2a;
+}
+#info-page a
+{
+	color: white;
+}
+#info-page img
+{
+	float: left;
+	margin-right: 5px;
+	height: 16px;
+	width: 16px;
 }
 #button-start:hover
 {
@@ -263,6 +284,11 @@ span.code
 	float: left;
 }
 
+footer img
+{
+   display: block;
+   margin: auto auto;
+}
 footer a:hover
 {
 	color: #a41326;
