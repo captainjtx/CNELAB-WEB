@@ -9,6 +9,11 @@ body
 	font-family: 'Open Sans', serif;
 	font-weight: 300;
 }
+.bibbase_icon
+{
+	height: 28px;
+	width: 19px;
+}
 .bs-docs-sidebar
 {
 	margin-top: 20px;
