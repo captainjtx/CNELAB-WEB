@@ -3,7 +3,7 @@ $(document).ready(function(){
     });
 
     function GetLatestReleaseInfo() {
-        $.getJSON("https://api.github.com/repos/captainjtx/CNELAB-WEB/releases/latest").done(function (release) {
+        $.getJSON("https://api.github.com/repos/captainjtx/CNELAB/releases/latest").done(function (release) {
             var asset = release.assets[0];
             var downloadCount = 0;
             for (var i = 0; i < release.assets.length; i++) {
