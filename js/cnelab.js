@@ -124,11 +124,11 @@ $(function (){
 	};
 
 	var switchPage=function(html){
-		showLoading("#main-content");
+		//showLoading("#main-content");
 		asynInsertHtml("#main-content",html);
 	};
 	var switchPageWithSupportSidebar=function(html){
-		showLoading("#main-content");
+		//showLoading("#main-content");
 		//ajax dynamic loading
 		var xhttp=new XMLHttpRequest();
 
