@@ -157,25 +157,6 @@ $(function (){
 	global.$cnelab=cnelab;
 })(window);
 
-function loadScript(url){
-    var script = document.createElement("script")
-    script.type = "text/javascript";
-
-    if (script.readyState){  //IE
-        script.onreadystatechange = function(){
-            if (script.readyState == "loaded" ||
-                    script.readyState == "complete"){
-                script.onreadystatechange = null;
-            }
-        };
-    } else {  //Others
-        script.onload = function(){
-        };
-    }
-    script.src = url;
-    document.getElementsByTagName("head")[0].appendChild(script);
-}
-
 $(function (){
 		$( "#home-page" ).click(function() {
 			$("#main-content").load("snippets/home-snippet.html");
@@ -189,7 +170,18 @@ $(function (){
 		});
 
 		$("#publication-page").click(function(){
-			$cnelab.switchPageWithSupportSidebar("snippets/publication-snippet.html");
+
+			var xhttp=new XMLHttpRequest();
+
+			xhttp.onreadystatechange=function(){
+				if (xhttp.readyState==4&&xhttp.status==200){
+					$cnelab.insertHtml("#main-content",xhttp.responseText);
+					$cnelab.asynInsertHtml("#side-bar","snippets/support-side-bar.html");
+					bibtexify("../bib/cite_cnelab.bib", "pubTable");
+				}
+			};
+			xhttp.open("GET","snippets/publication-snippet.html",true);
+			xhttp.send();
 		});
 
 		$("#about-page").click(function(){
