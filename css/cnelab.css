@@ -136,7 +136,7 @@ body
 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.3em;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 150%;
 }
 
@@ -163,7 +163,7 @@ span.code
 }
 #side-bar
 {
-	font-weight: 400;
+	font-weight: 300;
 }
 #side-bar h1
 {
@@ -177,7 +177,7 @@ span.code
 {
 	padding-top: 5px;
 	font-size: 1.1em;
-	font-weight: 600;
+	font-weight: 500;
 }
 #main-content
 {
