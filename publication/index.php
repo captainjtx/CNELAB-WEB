@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<?php include 'common/snippets/head.html';?>
+		<?php include '../snippets/head.html';?>
 	</head>
 	<body>
 		<header>
-			<?php include 'common/snippets/header.html';?>
+			<?php include '../snippets/header.html';?>
 		</header>
 
 		<div id="main-content"> 
@@ -32,20 +32,20 @@
 		</div>
 
 		<div id="info-page">
-			<?php include 'common/snippets/info-page.html';?>
+			<?php include '../snippets/info-page.html';?>
 		</div>
 
 
 		<footer>
-			<?php include 'common/snippets/footer.html';?>
+			<?php include '../snippets/footer.html';?>
 		</footer>
 
-		<script src="common/node_modules/clipboard/dist/clipboard.min.js"></script>
-		<script src="common/bootstrap/js/jquery-2.2.3.min.js"></script>
-		<script src="common/bib-publication-list/build/bib-list-min.js"></script>
-		<script src="common/bootstrap/js/bootstrap.min.js"></script>
-		<script src="common/js/cnelab.js"></script>
-		<script src="publication.js"></script>
+		<script src="../lib/node_modules/clipboard/dist/clipboard.min.js"></script>
+		<script src="../bootstrap/js/jquery-2.2.3.min.js"></script>
+		<script src="../lib/bib-publication-list/build/bib-list-min.js"></script>
+		<script src="../bootstrap/js/bootstrap.min.js"></script>
+		<script src="../js/cnelab.js"></script>
+		<script src="../js/publication.js"></script>
 	</body>
 </html>
 

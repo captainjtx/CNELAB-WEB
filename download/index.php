@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<?php include 'common/snippets/head.html';?>
+		<?php include '../snippets/head.html';?>
 	</head>
 	<body>
-		<header><?php include 'common/snippets/header.html';?></header>
+		<header><?php include '../snippets/header.html';?></header>
 
 		<div id="main-content"> 
 			<div id="subpage">
@@ -40,7 +40,7 @@
 						<div class="code">
 							<span id="clone">git clone https://github.com/captainjtx/CNELAB</span>
 							<button class="copy-btn" data-clipboard-target="#clone" data-toggle="tooltip" data-placement="top" title="Copy to clipboard" >
-								<img src="common/icon/clippy.svg" alt="Copy to clipboard">
+								<img src="../icon/clippy.svg" alt="Copy to clipboard">
 							</button>
 						</div>
 						<p>You can also download the <a href="https://github.com/captainjtx/CNELAB/archive/master.zip">zip archive</a> on the <a href="https://github.com/captainjtx/CNELAB" target="_blank">repository's home page</a>. It reflects the latest updates we made. 
@@ -51,18 +51,17 @@
 		</div>
 
 		<div id="info-page">
-			<?php include 'common/snippets/info-page.html';?>
+			<?php include '../snippets/info-page.html';?>
 		</div>
 
 
-		<footer><?php include 'common/snippets/footer.html';?></footer>
+		<footer><?php include '../snippets/footer.html';?></footer>
 
-		<script src="common/node_modules/clipboard/dist/clipboard.min.js"></script>
-		<script src="common/bootstrap/js/jquery-2.2.3.min.js"></script>
-		<script src="common/bib-publication-list/build/bib-list-min.js"></script>
-		<script src="common/bootstrap/js/bootstrap.min.js"></script>
-		<script src="common/js/cnelab.js"></script>
-		<script src="download.js"></script>
+		<script src="../lib/node_modules/clipboard/dist/clipboard.min.js"></script>
+		<script src="../bootstrap/js/jquery-2.2.3.min.js"></script>
+		<script src="../bootstrap/js/bootstrap.min.js"></script>
+		<script src="../js/cnelab.js"></script>
+		<script src="../js/download.js"></script>
 	</body>
 </html>
 
