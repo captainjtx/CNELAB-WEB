@@ -107,7 +107,7 @@ $(function (){
 	};
 	var showLoading=function(selector){
 		var html="<div class='text-center'>";
-		html+="<img src='images/ajax-loader.gif'></div>";
+		html+="<img src='common/images/ajax-loader.gif'></div>";
 		insertHtml(selector,html);
 	};
 
@@ -123,45 +123,16 @@ $(function (){
 		xhttp.send();
 	};
 
-	var switchPage=function(html){
-		//showLoading("#main-content");
-		asynInsertHtml("#main-content",html);
-	};
-	var switchPageWithSupportSidebar=function(html){
-		//showLoading("#main-content");
-		//ajax dynamic loading
-		var xhttp=new XMLHttpRequest();
-
-		xhttp.onreadystatechange=function(){
-			if (xhttp.readyState==4&&xhttp.status==200){
-				insertHtml("#main-content",xhttp.responseText);
-				asynInsertHtml("#side-bar","snippets/support-side-bar.html");
-			}
-		};
-		xhttp.open("GET",html,true);
-		xhttp.send();
-	}
 
 	cnelab.insertHtml=insertHtml;
 	cnelab.showLoading=showLoading;	
 	cnelab.asynInsertHtml=asynInsertHtml;
-	cnelab.switchPage=switchPage;
-	cnelab.switchPageWithSupportSidebar=switchPageWithSupportSidebar;
-
-	var homeHtml="snippets/home-snippet.html";
-
-	document.addEventListener("DOMContentLoaded",function(event){
-		switchPage(homeHtml);
-	});
 
 	global.$cnelab=cnelab;
 })(window);
 
 $(function (){
-		$( "#home-page" ).click(function() {
-			$("#main-content").load("snippets/home-snippet.html");
-		});
-		$( "#download-page" ).click(function() {
+		/*$( "#download-page" ).click(function() {
 			$cnelab.switchPageWithSupportSidebar("snippets/download-snippet.html");
 		});
 
@@ -186,7 +157,7 @@ $(function (){
 
 		$("#about-page").click(function(){
 			$cnelab.switchPageWithSupportSidebar("snippets/about-snippet.html");
-		});
+		});*/
 });
 
 
