@@ -62,7 +62,7 @@
 		<script src="common/bib-publication-list/build/bib-list-min.js"></script>
 		<script src="common/bootstrap/js/bootstrap.min.js"></script>
 		<script src="common/js/cnelab.js"></script>
-		<script src="download/download.js"></script>
+		<script src="download.js"></script>
 	</body>
 </html>
 

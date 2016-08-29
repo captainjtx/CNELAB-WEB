@@ -45,7 +45,7 @@
 		<script src="common/bib-publication-list/build/bib-list-min.js"></script>
 		<script src="common/bootstrap/js/bootstrap.min.js"></script>
 		<script src="common/js/cnelab.js"></script>
-		<script src="publication/publication.js"></script>
+		<script src="publication.js"></script>
 	</body>
 </html>
 
