@@ -24,7 +24,7 @@
 						<p>The core developer and maintainer of the CNELab software is <a>Tianxiao Jiang</a>. The idea of CNELab originates from another open-source software: <a href="http://biosigplot.sourceforge.net" target="_blank">BioSigPlot</a>, written by <a href="http://www.samuelboudet.com/" target="_blank">Samuel Boudet</a>. Based on it, CNELab has been gradually developed and enriched since 2014. Due to the explosion of new features, the original command line feature in BioSigPlot is not fully supported in CNELab. The current development of CNELab mainly focuses on the usability and stability of its GUI interface.</p>
 						<h2>Members of Clinical Neuroengineering Laboratory</h2>
 						<ul>
-							<li><a href="http://www.tianxiaojiang.com" target="_blank">Tianxiao Jiang</a>, PhD student, webmaster and software developer. Research of interests are human brain functional mapping and brain machine interface (BMI).</li>
+							<li><a>Tianxiao Jiang</a>, PhD student, webmaster and software developer. Research of interests are human brain functional mapping and brain machine interface (BMI).</li>
 							<li>Ilknur Telkes, PhD student, active CNELab user. Research of interests are Parkinson disease and deep brain stimulation (DBS).</li> 
 							<li>Su Liu, PhD student. Research of interests are epilepsy and high frequency oscillation (HFO).</li>
 							<li>Musa Ozturk, PhD student. Research of interests are deep brain stimulation (DBS) and hardware engineering.</li> 
